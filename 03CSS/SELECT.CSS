@@ -1,0 +1,41 @@
+
+
+
+
+
+/* p 요소 콘텐츠의 첫글자를 선택 */
+p::first-letter { font-size: 3em; }
+
+/* p 요소 콘텐츠의 첫줄을 선택 */
+p::first-line   { color: red; }
+
+/* h1 요소 콘텐츠의 앞 공간에 content 어트리뷰트 값을 삽입한다 */
+h1::before {
+   content: " HTML!!! ";
+   color: blue;
+}
+
+/* h1 요소 콘텐츠의 뒷 공간에 content 어트리뷰트 값을 삽입한다 */
+h1::after {
+   content: " CSS3!!!";
+   color: red;
+}
+
+/* 드래그한 콘텐츠를 선택한다 */
+::selection {
+   color: red;
+   background: yellow;
+}
+
+/* a 요소가 방문하지 않은 링크일 때 */
+a:link { color: orange; }
+
+/* a 요소가 방문한 링크일 때 */
+a:visited { color: green; }
+
+/* a 요소에 마우스가 올라와 있을 때 */
+a:hover { font-weight: bold; }
+
+/* a 요소가 클릭된 상태일 때 */
+a:active { color: blue; }
+
