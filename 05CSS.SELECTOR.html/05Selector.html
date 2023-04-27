@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .d1{}
+        .d1>input[type="checkbox"]{
+            display: none;
+        }
+        .d1>label{
+            display: block;
+            width: 45px;
+            height: 45px;
+            /* border: 1px solid black; */
+            background-image: url("./image/toggle_on_FILL0_wght400_GRAD0_opsz48.svg");
+            background-size: 100%;
+        }
+        .d1>input[type="checkbox"]:checked+label{
+            background-image: url("./image/toggle_off_FILL0_wght400_GRAD0_opsz48.svg");
+        }
+
+        .d2{}
+        .d2>input[type="radio"]{
+            display: none;
+        }
+        .d2>label{
+            display: inline-block;
+            width: 45px;
+            height: 45px;
+            border: 1px solid gray;
+            border-radius: 50%;
+        }
+        #rl:checked+label{
+            background-image: url('./image/male_FILL0_wght400_GRAD0_opsz48.svg');
+            background-size: 100%;
+        }
+        #r2:checked+label{
+            background-image: url('./image/female_FILL0_wght400_GRAD0_opsz48.svg');
+            background-size: 100%;
+        }
+        .d3{}
+        .d3>input[type="checkbox"]{
+            display: none;
+        }
+        .d3>label{
+            display: inline-block;
+            width: 45px;
+            height: 45px;
+        }   
+
+        #s1:checked+label{
+            background-image: url('./image/hiking_FILL0_wght400_GRAD0_opsz48.svg');
+            background-size: 100%;
+        }
+        #s2:checked+label{
+            background-image: url('./image/pool_FILL0_wght400_GRAD0_opsz48.svg');
+            background-size: 100%;
+        }
+        #s3:checked+label{
+            background-image: url('./image/book_FILL0_wght400_GRAD0_opsz48.svg');
+            background-size: 100%;
+        }
+
+        #s4:checked+label{
+            background-image: url('./image/directions_run_FILL0_wght400_GRAD0_opsz48.svg');
+            background-size: 100%;
+        }
+
+    </style>
+    
+</head>
+<body>
+   <div class="d1">
+    <input type="checkbox" id="chk1"><label for="chk1"></label> 
+   </div>
+   <div class="d2">
+        <input type="radio" name="gender" value="male" id="r1"> <label for="r1"></label>
+        <input type="radio" name="gender" value="female" id="r2"> <label for="r2"></label>
+   </div>
+   <div class="d3">
+    
+    <!-- 취미 각각에 맞는 이미지를 찾아서 label의 백그라운드로 하기-->
+    <input type="checkbox" name="climing" id="s1"><label for="s1">등산</label>
+    <input type="checkbox" name="swiming" id="s2"><label for="s2">수영</label>
+    <input type="checkbox" name="reading" id="s3"><label for="s3">독서</label>
+    <input type="checkbox" name="running" id="s4"><label for="s4">등산</label>
+   </div>
+</body>
+</html>
