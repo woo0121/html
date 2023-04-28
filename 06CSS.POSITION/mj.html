@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{}
+        body{}
+        ul{list-style: none; padding: 0px;}
+        a{text-decoration: none; color: black;}
+
+        .mainmenu{
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-around;
+            
+        }
+        .mainmenu>li{
+            border: 1px solid black;
+            width: 120%;
+           
+            position: relative;
+        }
+        .mainmenu>li>a{
+            border: 1px solid white;
+            height: 40px;
+            
+            line-height: 40px;
+            display: block;
+            margin-left: auto;
+
+           
+            font-size: 20px;
+            color: 
+             }
+             
+        .mainmenu>li>.submenu{
+            border: 1px solid green;
+           
+            left: 0px;
+            right: 0px;
+            top: 40px;
+            position: absolute;
+            width: 100%;
+            display: none;
+            
+        }
+        .mainmenu>li>.submenu>li{
+            
+           
+            text-align: center;
+        }
+        .mainmenu>li>.submenu>li>a{
+            display: block;
+            font-size: 20px;
+        }
+        .mainmenu>li:hover .submenu{
+            display: block;
+            border-image: linear-gradient(red);
+            border-image-slice: 1;
+        }
+        .mainmenu>li:hover .submenu>input{
+            border: 0;
+            outline: 0;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <ul class="mainmenu">
+        <li>
+            <a href="">menu</a>
+        
+                <ul class="submenu">
+                    <li><a href="">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href="">4</a></li>
+                    <li><a href="">5</a></li>
+                    <li><a href="">6</a></li>
+                    <li><a href="">7</a></li>
+                    <li><a href="">8</a></li>
+                </ul>
+           
+        </li>
+    </ul>
+    
+</body>
+</html>

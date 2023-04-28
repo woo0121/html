@@ -17,12 +17,15 @@
             background-color: aquamarine;
         }
         .c2~p{
-            color: blue;
+            color: red;
         }
         .c2+p{
-            font-size: 0.5rem;
+            font-size: 2rem;
         }
         /* .c2의 하위 모든 p태그 */
+        .c2 p{
+            color: brown;
+        }
         .c2 p{
             color: blueviolet;
         }
@@ -30,27 +33,27 @@
             background-color: beige;
         }
         .c3~p{
-            width: 200px;
+            color: deeppink;
         }
     </style>
 </head>
 <body>
 
-<div class="c1">
-    <p>1 HELLOWORLD</p>
-    <div class="c2">
-        <p>2 HELLOWORLD</p>
-        <div class="c3">
-        <p>3 HELLOWORLD</p>
-        <p>4 HELLOWORLD</p>
-        <p>5 HELLOWORLD</p>
-        </div>
-    <p>6 HELLOWORLD</p>
-    <p>7 HELLOWORLD</p>
-    </div>
-    <p>8 HELLOWORLD</p>
-    <p>9 HELLOWORLD</p>
-</div>
+<div class="c1">                                            1
+        <p>1 HELLOWORLD</p>
+            <div class="c2">                        2
+                <p>2 HELLOWORLD</p>
+            <div class="c3">                    3
+                    <p>3 HELLOWORLD</p>
+                    <p>4 HELLOWORLD</p>
+                    <p>5 HELLOWORLD</p>
+            </div>                              3
+                <p>6 HELLOWORLD</p>
+                <p>7 HELLOWORLD</p>
+    </div>                                      2
+            <p>8 HELLOWORLD</p>
+            <p>9 HELLOWORLD</p>
+</div>                                              1
     
 </body>
 </html>
