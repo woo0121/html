@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{box-sizing: border-box;}
+    
+    .d1{
+            width: 0px;
+            border: 0.5px solid;
+            transition: 0.5s;
+
+            
+        }
+        .d1:hover{
+            width: 200px;
+            border-bottom: 1px solid transparent;
+            border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, purple);
+            border-image-slice: 1;
+        }   
+        .d1>input{
+            border: 0px;
+            outline: 0px;
+        }
+</style>
+<body>
+    <div class="d1">
+        <input type="text">
+    
+    </div>
+    <ul>
+        <li>
+            <a href=""></a>
+            <ul>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </li>
+        <li>
+            <a href=""></a>
+            <ul>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

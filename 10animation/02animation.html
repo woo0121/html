@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {}
+
+        .animation-test {
+            width: 400px;
+            margin: 100px auto;
+        }
+
+        .animation-test>div {
+            width: 400px;
+            height: 40px;
+            background-color: orange;
+            color: white;
+            text-align: center;
+            line-height: 40px;
+            border: 1px solid gray;
+        }
+
+        .animation-test>.d1 {
+            animation-duration: 3s;
+            animation-name: moving1;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            position: absolute;
+
+
+        }
+
+        .animation-test>.d2 {
+            animation-duration: 3s;
+            animation-name: moving2;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            position: relative;
+            top: 40px;
+
+        }
+
+        .animation-test>.d3 {
+            animation-duration: 3s;
+            animation-name: moving3;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            position: relative;
+            top: 40px;
+        }
+
+        @keyframes moving1 {
+            from {
+                margin-top: 100%;
+            }
+
+            to {
+                margin-top: 0%;
+            }
+        }
+
+        @keyframes moving2 {
+            from {
+                margin-left: 100%;
+            }
+
+            to {
+                margin-left: 0%;
+            }
+        }
+
+        @keyframes moving3 {
+            from {
+                margin-top: 100%;
+                margin-left: 100%;
+            }
+
+            to {
+                margin-top: 0%;
+                margin-left: 0%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="animation-test">
+
+        <div class="d1">HELLOWORLD1</div>
+        <div class="d2">HELLOWORLD2</div>
+        <div class="d3">HELLOWORLD3</div>
+
+    </div>
+</body>
+
+</html>
