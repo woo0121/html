@@ -5,23 +5,113 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- 전체 -->
-    <link rel="stylesheet" href="css/common.css">
-    <!-- 헤더 -->
-    <link rel="stylesheet" href="./header.css">
-    <!-- 메인 -->
-    <link rel="stylesheet" href="./main.css">
-    <!-- 푸터 -->
-    <link rel="stylesheet" href="css2/footer.css">
     <style>
-       
-       
+        /* 전체 */
+        *{margin:2px;}
+        body{}
+        a{}
+        ul{}
+        .wrapper{
+            width:1800px;
+            /* height:1200px; */
+            border:1px solid gray;
+            margin:0 auto;
+        }
 
-      
+        /* 헤더 */
+        .wrapper>header{
+            border:1px solid gray;
+            height:100px;
+
+        }
+        .wrapper>header>.top--header{
+            border:1px solid gray;  
+            height:40px;
+        }
+        .wrapper>header>nav{
+            border:1px solid gray;  
+            height:50px;
+        }
+
+
+        /* 메인 */
+        .wrapper>main{
+            border:1px solid gray;
+            /* height:600px; */
+            
+
+        }
+        .wrapper>main>section{
+            border:1px solid gray;
+        }
+        .wrapper>main>section:nth-child(1){
+            height:400px;
+            display: flex;        
+            margin:0 auto;
+
+            
+        }
+        .wrapper>main>section:nth-child(1)>aside{
+            border:1px solid gray;
+            width:300px;
+        }
+        .wrapper>main>section:nth-child(1)>article{
+            border:1px solid gray;
+            flex-grow: 1;
+        }
+
+
+        .wrapper>main>section:nth-child(2){
+            height:500px;
+            display: flex;
+
+        }
+        .wrapper>main>section:nth-child(2)>aside{
+            border:1px solid gray;
+            width:300px;
+            background-color:antiquewhite;
+        }
+        .wrapper>main>section:nth-child(2)>article{
+            border:1px solid gray;
+            flex-grow: 1;
+            background-color: beige;
+        }
+
+        .wrapper>main>section:nth-child(3){
+            height:400px;
+            display:flex;
+            flex-direction: column;
+        }
+        .wrapper>main>section:nth-child(3)>article{
+            height:50px;
+            border:1px solid gray;
+        }
+        .wrapper>main>section:nth-child(3)>div{
+            display:flex;
+            border:1px solid gray;
+            align-items: center;
+            height:280px;
+        }
+        .wrapper>main>section:nth-child(3)>div>aside{
+            width:300px;
+            border:1px solid gray;
+            align-self: stretch;
+            
+        }
+
+        .wrapper>main>section:nth-child(3)>div>article{
+            flex-grow: 1;
+            border:1px solid gray;
+            height:280px;      
+        }
 
 
 
-
+        /* 푸터 */
+        .wrapper>footer{
+            border:1px solid gray;
+            height:300px;
+        }
     </style>
 </head>
 <body>
@@ -55,10 +145,30 @@
             </section>
         </main>
         <!-- 푸터 -->
-        <footer></footer>
+        <footer>
+            <main>
+                <section>
+                    <aside></aside>
+                    <article></article>
+                </section>
+                <section>
+                    <aside></aside>
+                    <article></article>
+                    <aside></aside>
+                </section>
+    
+                <section>
+                    <article></article>
+                    <div>
+                        <aside></aside>
+                        <article></article>
+                        <aside></aside>
+                    </div>
+                    <article></article>
+                </section>
+            </main>
+        </footer>
     </div>
-
-
 </body>
 </html>
 

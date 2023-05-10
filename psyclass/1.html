@@ -7,142 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/c.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./common.css">
     <style>
-        ul{list-style: none;}
-        a{list-style: none; color: black;}
-
-        #main-page {
-
-            margin-top: 10px;
-            font-size: 20px;
-            font-weight: bold;
-            line-height: 80px;
-            text-align: center;
-           
-        }
-
-        header {
-            
-            text-align: center;
 
 
-        }
 
-        .title {
-            font-size: 20px;
-            text-align: center;
-            line-height: 40px;
-            border-bottom: 1px solid black;
-            font-weight: bold;
-        }
 
-        .box {
-            border: 1px solid black;
-          
-        }
-        .btn--primary{
-            margin-top: 50px;
-            text-align: center;
-       
-          
-        }
-        footer{
-            border: 1px solid;
-            width: 100%;
-            height: 300px;
-            margin-top: 50px;
-            align-items: left;
-            position: relative;
-           
-        }
-        footer>img{
-            
-            height: 100%;
-            
-            width: 100%;
-           
-        
 
-          
-        
-        }
-        #main-page>span{
-            display: inline-block;
-            align-items: center;
-            
-            
-        }
-        footer{
-            background-color: darkslategray;
-            width: 100%;
-            height:100%;
-        }
-        footer>main>div>ul{
-            display: flex;
-            justify-content: left;
-            align-items: center;
-            margin-left: 10%;
-            
-        }
-        footer>main>div>ul>li::after{
-            content: "|";
-            float: right;
-          display: block;
-          color: white;
-        }
-        footer>main>div>ul>li:last-child::after{
-            content: "";
-        }
-        footer>main>div>ul>li>a{
-            padding: 0 10px;
-     /* border: 1px solid blue; */
-             font-size: 20px;
-           color: white;
-        }
-        footer>main>.foot--middle{
-             display: flex;
-             justify-content: space-around;
-    /* border: 1px solid; */
-             height: 300px;
-             padding: 0 50px;
-             color: white;
-        }
-        footer>main>.foot--middle>article{
-           
-     color: white;
-    font-size: 20px;
-        }
-        footer>main>.foot--middle>.middle--left>p{
-        
-          color: white;
-         font-size: 20px;
-         
-        }
-        footer>main>.foot--middle>.middle--right{
-            
-    color: white;
-    font-size: 20px;
-        }
-        footer>main>section>.foot--bottom{
-             color: white;
-             text-align: center;
-            
-             
-        }
+
     </style>
 
 </head>
 
 <body>
-    <form action="test.jsp"></form>
+
     <header>
-      <a href="">  <img src="./image/로고.png" alt=""></a>
-    </header>
-    <div class="box">
-        <div class="title">
-            <div>강의적성검사</div>
-        </div>
+        <a href=""> <img src="./scr/Logo.png" alt=""></a>
+     </header>
+          <div class="box">
+             <div class="title">
+                <div>강의적성검사</div>
+             </div>
 
 
         <div id="main-page">
@@ -220,35 +110,40 @@
                         <li><a href="">개인정보처리방침</a></li>
                     </ul>
                 </div>
-               
+
                 <section class="foot--middle">
                     <article class="middle--left">
-                       <p> Psyclass</p>
-                       <p> 이메일 : psyclass11@psy.co.kr</p>
-                      <p>  주소 : 대구광역시 중구 달구벌대로 12-56</p>
-                       <p> 회사명 : Psyclass</p>
-                       <p> 사업자 등록 번호 : 502-811-00429</p>
-                      <p>  대표 전화 번호 : 010-1000-1004</p>
+                        <p> Psyclass</p>
+                        <p> 이메일 : psyclass11@psy.co.kr</p>
+                        <p> 주소 : 대구광역시 중구 달구벌대로 12-56</p>
+                        <p> 회사명 : Psyclass</p>
+                        <p> 사업자 등록 번호 : 502-811-00429</p>
+                        <p> 대표 전화 번호 : 010-1000-1004</p>
                     </article>
                     <article>
-                       <p> 고객센터</p>
+                        <p> 고객센터</p>
 
-                       <p> 공지사항</p>
-                     <p>  질문하기 </p> </article>
+                        <p> 공지사항</p>
+                        <p> 질문하기 </p>
+                    </article>
                     <article class="middle--right">
-                      <p>  코드등록 </p>
-                      <p>  수강코드등록</p>
+                        <p> 코드등록 </p>
+                        <p> 수강코드등록</p>
 
                     </article>
                 </section>
-    
-                <section>
-                    <article class="foot--bottom">Copyright ©psyclass. ALL RIGHTS RESERVED</article>
-                    <div> 
-                      <a href=""> </a> 
+
+
+                <div class="foot--bottom">
+                    <div>
+                        <a href=""><img src="./scr/icons8-페이스-북-256.png" style="width: 3em;" alt=""></a>
+                        <a href=""><img src="./scr/icons8-twitter-제곱-90.png" style="width: 3em;" alt=""></a>
+                        <a href=""><img src="./scr/icons8-인스-타-그램-256.png" style="width: 3em;" alt=""></a>
+                        <a href=""><img src="./scr/icons8-링크드-인-150.png" style="width: 3em;" alt=""></a>
+                        <a href=""><img src="./scr/icons8-유튜브-재생-100.png" style="width: 3em;" alt=""></a>
                     </div>
-                    <article></article>
-                </section>
+                    <div>Copyright ⓒpsyclass. ALL RIGHTS RESERVED</div>
+                </div>
             </main>
         </footer>
     </div>
